@@ -11,11 +11,11 @@ management:
   health:
     circuitbreaker:
       enabled: true
-  endpoints:
-    web:
-      exposure:
-        include: health
   endpoint:
     health:
       show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: "*"
 
